@@ -1,0 +1,57 @@
+{
+  "name": "apiappsberita",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "juancesar123",
+    "email": "juancesarandrianto@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^2.1.2",
+    "@feathersjs/authentication-jwt": "^2.0.0",
+    "@feathersjs/authentication-local": "^1.1.0",
+    "@feathersjs/configuration": "^1.0.2",
+    "@feathersjs/errors": "^3.3.0",
+    "@feathersjs/express": "^1.2.0",
+    "@feathersjs/feathers": "^3.1.3",
+    "@feathersjs/socketio": "^3.2.0",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "feathers-authentication-hooks": "^0.1.5",
+    "feathers-hooks-common": "^3.10.0",
+    "feathers-sequelize": "^3.0.0",
+    "helmet": "^3.9.0",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.28.6",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
