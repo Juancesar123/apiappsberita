@@ -9,6 +9,8 @@ const organisasi = require('./organisasi/organisasi.service.js');
 const laboratorium = require('./laboratorium/laboratorium.service.js');
 const notifikasiorder = require('./notifikasiorder/notifikasiorder.service.js');
 const notifikasi = require('./notifikasi/notifikasi.service.js');
+const test = require('./test/test.service.js');
+const tabletarifcheck = require('./tabletarifcheck/tabletarifcheck.service.js');
 module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
   app.configure(artikel);
@@ -22,4 +24,6 @@ module.exports = function () {
   app.configure(laboratorium);
   app.configure(notifikasiorder);
   app.configure(notifikasi);
+  app.configure(test);
+  app.configure(tabletarifcheck);
 };

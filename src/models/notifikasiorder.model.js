@@ -31,7 +31,8 @@ module.exports = function (app) {
       beforeCount(options) {
         options.raw = true;
       }
-    }
+    },
+    timestamps: false,
   });
 
   notifikasiorder.associate = function (models) { // eslint-disable-line no-unused-vars

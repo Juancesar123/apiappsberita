@@ -1,7 +1,5 @@
 
 
-const likequery = require('../../hooks/likequery');
-
 module.exports = {
   before: {
     all: [],
