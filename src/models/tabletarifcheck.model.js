@@ -34,7 +34,11 @@ module.exports = function (app) {
     Uraian_contoh: {
       type: DataTypes.STRING(25),
       allowNull: false,
-    }
+    },
+    Tarif_industri: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   }, {
     hooks: {
       beforeCount(options) {
